@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: caps;
     src: url(../fonts/caps.ttf)
@@ -37,6 +38,7 @@ a {
     color: #181818;
     transition: 300ms color ease;
     font-family: caps;
+   
 }
 a:hover {
     color: #BADC58;
@@ -44,16 +46,25 @@ a:hover {
     transition: 300ms color ease;
 }
 a,h1,h2,h3,address {
-    font-family: caps;
+    font-family: normal;
 }
 .hero {
-    height: calc(100vh- 60px);
+    height: calc(100vh - 60px);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    color: white;
+}
+.hero_img {
+    position: absolute;
+    top: 60px;
+    height: calc(100vh - 60px);
+    width: 100%;
+    z-index: -1;
+    filter: brightness(60%);
 }
 .hero-content {
     display: flex;
@@ -61,20 +72,16 @@ a,h1,h2,h3,address {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 240px 0px 91px 0px;
-    width: 639px;
-    height: 216px;
 }
 h1 {
+    margin-bottom: 10px;
     font-size: 50px;
     font-family: normal;
 }
 .hero-content p {
-    margin: 10px 517px 0px 517px;
+    margin-bottom: 52px;
     font-size: 14px;
     font-weight: bold;
-    width: 332px;
-    height: 41px;
 }
 .button {
     border: 1px solid #BADC58;
@@ -82,13 +89,17 @@ h1 {
     font-size: 14px;
     padding: 13px 52px 14px 52px;
     border-radius: 10px;
-    margin: 52px 601px 91px 601px;
+    margin-bottom: 91px;
 }
 .down {
     font-size: 10px;
     font-weight: bold;
     font-family: sans-serif;
-    margin: 0px 640px 108px 640px;
-    width: 86px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     height: 45px;
+    color: white;
 }
