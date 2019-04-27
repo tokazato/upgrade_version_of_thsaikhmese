@@ -374,6 +374,15 @@ address, .contact a {
     h1 {
         font-size: 35px;
     }
+    .hero-content {
+        height: calc(100vh - 60px);
+    }
+    .hero::before {
+        bottom: 0;
+    }
+    .hero_img {
+        height: calc(100vh - 60px);
+    }
     .hero::after {
         visibility: visible;
     }
@@ -412,15 +421,6 @@ address, .contact a {
     }
     .down {
         display: flex;
-    }
-    .hero-content {
-        height: calc(100vh - 60px);
-    }
-    .hero::before {
-        bottom: 0;
-    }
-    .hero_img {
-        height: calc(100vh - 60px);
     }
     .more {
         margin-bottom: 91px; 
