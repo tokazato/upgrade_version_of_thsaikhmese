@@ -343,15 +343,6 @@ address, .contact a {
     .down {
         display: none;
     }
-    .hero-content {
-        height: calc(100vh - 260px);
-    }
-    .hero::before {
-        bottom: 200px;
-    }
-    .hero_img {
-        height: calc(100vh - 260px);
-    }
     .more {
         margin-bottom: 41px; 
     }
