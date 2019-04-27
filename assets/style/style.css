@@ -33,7 +33,22 @@ header {
     justify-content: space-between;
 }
 .burger {
-    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: #181818;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.burger__item {
+    display: block;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+    margin: 1px 0;
 }
 a {
     color: #181818;
@@ -318,6 +333,14 @@ address, .contact a {
     .academy-logo {
         order: 3;
     }
+    .burger {
+        display: flex;
+
+    }
+    nav{
+    	display: none;
+    }
+    
 }
 @media only screen and (min-width:680px) {
     body {
@@ -350,6 +373,13 @@ address, .contact a {
     }
     .academy-logo {
         order: 0;
+    }
+    .burger {
+        display: none;
+
+    }
+    nav{
+    	display: flex;
     }
 }
 @media only screen and (min-width: 850px) {
