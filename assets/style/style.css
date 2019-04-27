@@ -257,7 +257,7 @@ footer::after {
 address, .contact a {
     font-style: normal;
     font-size: 14px;
-    font-family: caps;
+    font-family: normal;
     color: #F59A63;
     margin: 0px 25px 0px 25px;
 }
@@ -292,7 +292,7 @@ address, .contact a {
         width: calc(100% - 20px);
     }
     h1 {
-        font-size: 35px;
+        font-size: 25px;
     }
     .hero::after {
         z-index: -3;
@@ -304,6 +304,9 @@ address, .contact a {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    address, .contact a {
+        font-size: 12px;
     }
     .footer_icons {
         display: flex;
