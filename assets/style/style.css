@@ -295,7 +295,7 @@ address, .contact a {
         font-size: 25px;
     }
     .hero::after {
-        z-index: -3;
+        visibility: hidden;
     }
     footer {
         height: 600px;
@@ -333,7 +333,7 @@ address, .contact a {
         font-size: 50px;
     }
     .hero::after {
-        z-index: 1;
+        visibility: visible;
     }
     footer {
         height: 500px;
