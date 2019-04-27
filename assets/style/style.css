@@ -96,6 +96,8 @@ h1 {
     margin-bottom: 53px;
     font-size: 14px;
     font-weight: bold;
+    width: 300px;
+    text-align: center;
 }
 .hero::after {
     content: url(../image/basil.png);
@@ -269,7 +271,7 @@ address, .contact a {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    align-items: center;
+    align-items: baseline;
 }
 .social img {
     width: 18px;
@@ -279,7 +281,93 @@ address, .contact a {
 .social img:hover {
     background: #BADC58;
 }
-
+@media only screen and (min-width: 320px){
+    body {
+        width: calc(100% - 20px);
+    }
+    .map, .contact {
+        width: calc(100% - 5px);
+    }
+    .pasta {
+        width: calc(100% - 20px);
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .hero::after {
+        z-index: -3;
+    }
+    footer {
+        height: 600px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        height: 150px;
+    }
+    .academy-logo {
+        order: 3;
+    }
+}
+@media only screen and (min-width:680px) {
+    body {
+        width: calc(100% - 20px);
+    }
+    .map, .contact {
+        width: calc(100% - 5px)
+    }
+    .pasta {
+        width: calc(50% - 20px);
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .hero::after {
+        z-index: 1;
+    }
+    footer {
+        height: 500px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    } 
+    .footer_icons {
+        display: flex;
+        flex-direction: row;
+        height: 0;
+    }
+    .academy-logo {
+        order: 0;
+    }
+}
+@media only screen and (min-width: 850px) {
+    body {
+        width: calc(100% - 20px);
+    }
+    .map, .contact {
+        width: calc(100% - 5px)
+    }
+    .pasta {
+        width: calc((100% / 3) - 20px);
+    }
+}
+@media only screen and (min-width: 1084px){
+    body {
+        width: calc(100% - 20px);
+    }
+    .map, .contact {
+        width: calc(100% - 5px)
+    }
+}
 
 
 
