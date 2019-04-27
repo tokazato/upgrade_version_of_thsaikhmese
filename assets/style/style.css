@@ -106,6 +106,7 @@ h1 {
     margin-bottom: 13px;
     font-size: 50px;
     font-family: normal;
+    font-weight: normal;
 }
 .hero-content p {
     margin-bottom: 53px;
@@ -113,6 +114,7 @@ h1 {
     font-weight: bold;
     width: 300px;
     text-align: center;
+    font-weight: normal;
 }
 .hero::after {
     content: url(../image/basil.png);
@@ -126,7 +128,9 @@ h1 {
     font-size: 14px;
     padding: 13px 48px 14px 48px;
     border-radius: 10px;
-    margin-bottom: 91px;
+}
+.more {
+    margin-bottom: 91px; 
 }
 .add {
     color: #BADC58;
@@ -230,8 +234,8 @@ h1 {
 footer {
     position: relative;
     height: 500px;
-    padding-top: 103px;
-    padding-bottom: 24px;
+    padding-top: 100px;
+    padding-bottom: 25px;
     left: 0;
     right: 0;
     display: flex;
@@ -260,26 +264,26 @@ footer::after {
     z-index: -1;
 }
 .contact {
-    width: 1084px;
+    width: 100%;
     background-color: #fff;
     border-radius: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    padding: 22px;
+    padding: 22px; 
     box-sizing: border-box;
 }
 address, .contact a {
     font-style: normal;
-    font-size: 14px;
+    font-size: 16px;
     font-family: normal;
     color: #F59A63;
-    margin: 0px 25px 0px 25px;
 }
 .map {
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 31px;
+    width: 100%;
 }
 .footer_icons {
     display: flex;
@@ -298,10 +302,7 @@ address, .contact a {
 }
 @media only screen and (min-width: 320px){
     body {
-        width: calc(100% - 20px);
-    }
-    .map, .contact {
-        width: calc(100% - 5px);
+        width: calc(100% - 40px);
     }
     .pasta {
         width: calc(100% - 20px);
@@ -313,7 +314,7 @@ address, .contact a {
         visibility: hidden;
     }
     footer {
-        height: 600px;
+        padding-top: 40px;
     }
     .contact {
         display: flex;
@@ -335,37 +336,55 @@ address, .contact a {
     }
     .burger {
         display: flex;
-
     }
     nav{
     	display: none;
     }
-    
+    .down {
+        display: none;
+    }
+    .hero-content {
+        height: calc(100vh - 260px);
+    }
+    .hero::before {
+        bottom: 200px;
+    }
+    .hero_img {
+        height: calc(100vh - 260px);
+    }
+    .more {
+        margin-bottom: 41px; 
+    }
+    .menu::before {
+        height: 23px ;
+        top: -23px;
+    }
+    .menu::after {
+        height: 23px ;
+        bottom: -23px;
+    }
 }
 @media only screen and (min-width:680px) {
     body {
-        width: calc(100% - 20px);
-    }
-    .map, .contact {
-        width: calc(100% - 5px)
+        width: calc(100% - 40px);
     }
     .pasta {
         width: calc(50% - 20px);
     }
     h1 {
-        font-size: 50px;
+        font-size: 35px;
     }
     .hero::after {
         visibility: visible;
-    }
-    footer {
-        height: 500px;
     }
     .contact {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     } 
+    address, .contact a {
+        font-size: 16px;
+    }
     .footer_icons {
         display: flex;
         flex-direction: row;
@@ -376,7 +395,6 @@ address, .contact a {
     }
     .burger {
         display: none;
-
     }
     nav{
     	display: flex;
@@ -384,21 +402,44 @@ address, .contact a {
 }
 @media only screen and (min-width: 850px) {
     body {
-        width: calc(100% - 20px);
+        width: calc(100% - 40px);
     }
-    .map, .contact {
-        width: calc(100% - 5px)
+    h1 {
+        font-size: 50px;
     }
     .pasta {
         width: calc((100% / 3) - 20px);
     }
+    .down {
+        display: flex;
+    }
+    .hero-content {
+        height: calc(100vh - 60px);
+    }
+    .hero::before {
+        bottom: 0;
+    }
+    .hero_img {
+        height: calc(100vh - 60px);
+    }
+    .more {
+        margin-bottom: 91px; 
+    }
+    .menu::before {
+        height: 53px ;
+        top: -53px;
+    }
+    .menu::after {
+        height: 53px ;
+        bottom: -53px;
+    }
+    footer {
+        padding-top: 100px;
+    }
 }
 @media only screen and (min-width: 1084px){
     body {
-        width: calc(100% - 20px);
-    }
-    .map, .contact {
-        width: calc(100% - 5px)
+        width: calc(100% - 40px);
     }
 }
 
