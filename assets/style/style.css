@@ -276,13 +276,24 @@ address, .contact a {
     width: 100%;
     align-items: baseline;
 }
-.social img {
-    width: 18px;
-    height: 18px;
-    margin: 5px;
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 127px;
 }
-.social img:hover {
-    background: #BADC58;
+.socials a {
+    height: 24px;
+}
+.socials svg {
+    height: 100%; 
+}
+.socials path {
+    fill: white;
+    transition: 0.3s ease;
+}
+.socials a:hover path {
+    fill: #BADC58;
+    transition: 0.3s ease;
 }
 @media only screen and (min-width: 0px){
     body {
@@ -314,7 +325,7 @@ address, .contact a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center; 
-        height: 150px;
+        height: 150px; 
     }
     .academy-logo {
         order: 3;
@@ -365,7 +376,7 @@ address, .contact a {
     .footer_icons {
         display: flex;
         flex-direction: row;
-        height: 0; 
+        height: 20px;
     }
     .academy-logo {
         order: 0;
