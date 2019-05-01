@@ -173,7 +173,6 @@ h1 {
     background-color: #fff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    z-index: 2;
 }
 .menu_title {
     text-align: center;
@@ -199,6 +198,7 @@ h1 {
     padding: 29px;
     box-sizing: border-box;
     transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
+    z-index: 1; 
 }
 .pasta:hover {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
