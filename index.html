@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/style/style.css">
-    <script src="assets/js/main.js"></script>
     <title>წაიხემსე</title>
 </head>
 <body>
     <header>
-        <img src="assets/image/logo.svg"  alt="logo">
-        <nav>
+         <a href="index.html"><img src="assets/image/logo.svg"  alt="logo" title="Logo"></a>
+        <nav id='navi'>
             <ul class="header-navigation">
                 <li><a  href="#">პროდუქცია</a></li>
                 <li><a  href="#">კონტაქტი</a></li>
             </ul>
         </nav>
-        <div class="burger">
-            <span class="burger__item"></span>
-            <span class="burger__item"></span>
-            <span class="burger__item"></span>
+        <div class="burger" onclick="myFunction(this)">
+            <span class="burger__item1"></span>
+            <span class="burger__item2"></span>
+            <span class="burger__item3"></span>
         </div>
     </header> 
     <div class="hero">
@@ -39,37 +38,37 @@
                 <img class="lazy"  alt="tomati" src="media/cover.jpeg" data-src="media/1.png">
                 <h3>სპაგეტი ალა მატრიჩიანა</h3>
                 <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-                <a class="add"  href="#">დამატება</a>
+                <button class="add">დამატება</button>
             </li>
             <li class="pasta">
               <img class="lazy"  alt="tomati" src="media/cover.jpeg"   data-src="media/2.png">
               <h3>სპაგეტი ალა მატრიჩიანა</h3>
               <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add" href="#">დამატება</a>
+              <button class="add">დამატება</button>
           </li>
           <li class="pasta">
               <img class="lazy"   alt="tomati"src="media/cover.jpeg"   data-src="media/3.png">
               <h3>სპაგეტი ალა მატრიჩიანა</h3>
               <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add added" href="#">დამატებულია</a>
+              <button class="add">დამატება</button>
           </li>
           <li class="pasta">
               <img class="lazy"  alt="tomati" src="media/cover.jpeg"   data-src="media/4.png">
               <h3>სპაგეტი ალა მატრიჩიანა</h3>
               <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add" href="#">დამატება</a>
+              <button class="add">დამატება</button>
           </li>
           <li class="pasta">
               <img class="lazy"   alt="tomati"src="media/cover.jpeg"   data-src="media/5.png">
               <h3>სპაგეტი ალა მატრიჩიანა</h3>
               <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add" href="#">დამატება</a>
+              <button class="add">დამატება</button>
           </li>
           <li class="pasta">
               <img class="lazy"  alt="tomati" src="media/cover.jpeg"  data-src="media/6.png">
               <h3>სპაგეტი ალა მატრიჩიანა</h3>
               <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add" href="#">დამატება</a>
+              <button class="add">დამატება</button>
           </li>
         </ul>
     </section>
@@ -102,6 +101,6 @@
             <img src="assets/image/card.svg" alt="">
         </div>
     </footer>
-    
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

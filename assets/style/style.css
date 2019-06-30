@@ -17,7 +17,7 @@
 body {
     max-width: 1084px;
     margin: 0 auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 header, ul {
     display: flex;
@@ -33,22 +33,33 @@ header {
     justify-content: space-between;
 }
 .burger {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: #181818;
-    border-radius: 10px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-.burger__item {
+.burger__item1, .burger__item2, .burger__item3 {
     display: block;
-    width: 10px;
-    height: 2px;
+    width: 15px;
+    height: 3px;
     border-radius: 1px;
     background-color: #fff;
     margin: 1px 0;
+}
+.change .burger__item1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+.change .burger__item2 {opacity: 0;}
+
+.change .burger__item3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-4px, -4px);
 }
 a {
     color: #181818;
@@ -115,11 +126,11 @@ h1 {
     font-weight: normal;
 }
 .hero::after {
-    content: url(../image/basil.png);
+    content: url(../image/one.png);
     position: absolute;
-    right: -900px;
-    bottom: -400px;
-    z-index: 1;
+    right: 0px;
+    bottom: -100px;
+    z-index: -1;
 }
 .add, .more {
     border: 1px solid #BADC58;
@@ -129,6 +140,8 @@ h1 {
 }
 .add {
     color: #BADC58;
+    background: #fff;
+    cursor: pointer;
 }
 .add:hover {
     background-color: #BADC58;
@@ -181,13 +194,6 @@ h1 {
 .pastas {
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.added {
-    background-color: #ECF0F1;
-    border-color: #ECF0F1;
-    color: #BDC3C7;
-    cursor: not-allowed;
-    padding: 13px 31px 14px 31px;
 }
 .pasta {
     display:flex;
@@ -249,7 +255,7 @@ footer::after {
     bottom: 0;
     background-color: #292C2F;
     height: 100%;
-    width: 100vw;
+    width: calc( 100vw - 20px);
     z-index: -1;
 }
 .contact {
@@ -299,11 +305,42 @@ address, .contact a {
     body {
         width: calc(100% - 40px);
     }
+    nav.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: #292C2F;
+        z-index: 1;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+    }
+    nav.open .header-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+    .header-navigation li a {
+        color: #FFF;
+    }
+    .header-navigation li a:hover {
+        color: #BADC58;
+    }
+
     .pasta {
         width: calc(100% - 20px);
     }
     h1 {
         font-size: 20px;
+    }
+    .hero-content p {
+        width: 250px;
     }
     .hero::after {
         visibility: hidden;
@@ -356,6 +393,9 @@ address, .contact a {
     }
 }
 @media only screen and (min-width:680px) {
+    .header-navigation li a {
+        color: #181818;
+    }
     .pasta {
         width: calc(50% - 20px);
     }
@@ -364,6 +404,9 @@ address, .contact a {
     }
     .hero::after {
         visibility: visible;
+    }
+    .hero-content p {
+        width: 300px;
     }
     .contact {
         display: flex;
