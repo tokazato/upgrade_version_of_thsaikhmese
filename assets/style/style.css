@@ -17,7 +17,7 @@
 body {
     max-width: 1084px;
     margin: 0 auto;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 header, ul {
     display: flex;
