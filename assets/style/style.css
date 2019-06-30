@@ -255,7 +255,7 @@ footer::after {
     bottom: 0;
     background-color: #292C2F;
     height: 100%;
-    width: calc( 100vw - 20px);
+    width: 100vw;
     z-index: -1;
 }
 .contact {
