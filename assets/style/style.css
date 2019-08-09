@@ -7,6 +7,23 @@
     font-family: normal-bold;
     src: url(../fonts/normal-bold.ttf)
 }
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -142,10 +159,11 @@ h1 {
     color: #BADC58;
     background: #fff;
     cursor: pointer;
+    outline: none;
 }
 .add:hover {
     background-color: #BADC58;
-    color: #181818;
+    color: #181818 !important;
 }
 .down {
     font-size: 10px;
@@ -266,10 +284,28 @@ footer::after {
     padding: 22px; 
     box-sizing: border-box;
 }
-address, .contact a {
+address {
     font-style: normal;
     font-family: normal;
     color: #F59A63;
+}
+.mobileBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.mobileBox:hover {
+    animation: shake 0.8s;
+}
+.mobile {
+    color: rgb(148, 194, 10);
+}
+.mobileIcon {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
 }
 .map {
     border-radius: 20px;
@@ -301,6 +337,41 @@ address, .contact a {
     fill: #BADC58;
     transition: 0.3s ease;
 }
+
+/* ----------- product page 2 ------------ */
+.menu2 {
+    margin-top: 70px;
+}
+.menu2::before {
+    box-shadow: 0 -6px 5px rgb(238, 238, 238);
+}
+.productHeader::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    z-index: -1;
+    background: #BADC58;
+    background-size: 100vw;
+}
+.productHeader a:hover {
+    color: #fff !important;
+    transition: 0.5s
+}
+.title2 {
+    margin-bottom: 50px;
+    font-size: 30px
+}
+
+
+/* ----------- contact page 3 ------------ */
+
+.contactFooter::before {
+content: '';
+}
+
 @media only screen and (min-width: 0px){
     body {
         width: calc(100% - 40px);
@@ -312,7 +383,7 @@ address, .contact a {
         align-items: center;
         position: absolute;
         background: #292C2F;
-        z-index: 1;
+        z-index: 7777;
         top: 60px;
         left: 0;
         right: 0;

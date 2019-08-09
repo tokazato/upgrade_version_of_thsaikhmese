@@ -32,8 +32,12 @@ for (let i = 0; i < btn; i++) {
     this.classList.toggle('added');
       if(this.classList.contains('added')) {
         this.textContent = 'დამატებულია';
+        this.style.color = 'grey';
+        this.style.border = '1px solid lightgray';
       } else {
         this.textContent = 'დამატება';
+        this.style.color = '#BADC58';
+        this.style.border = '1px solid #BADC58';
       }
   });
 }
@@ -55,3 +59,23 @@ brg.addEventListener('click', burgerClick);
 function burgerClick() {
   menu.classList.toggle('open');
 }
+
+
+// ------------------- go down ------------------
+
+var more = document.getElementById('down');
+more.addEventListener('click', function() {
+  var x = 1;
+  var id = setInterval(scroll, 50);
+  function  scroll(){
+    if(x >= 75){ 
+    clearInterval(id);
+  } else {
+    x += 5;
+    window.scrollBy(0, x);
+  }
+
+  }
+ 
+})
+
