@@ -428,6 +428,9 @@ content: '';
         font-size: 12px;
         text-align: center;
     }
+    .mobileBox  {
+        margin-top: 10px;
+    }
     .footer_icons {
         display: flex;
         flex-direction: column;
